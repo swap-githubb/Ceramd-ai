@@ -3,4 +3,5 @@ uvicorn
 python-dotenv
 requests
 together
+python-multipart
 
