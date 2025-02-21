@@ -36,7 +36,7 @@ function App() {
       .join('\n');
       setprocess1(true);
     try {
-      const response = await axios.post('http://localhost:8000/finalize_conversation', {
+      const response = await axios.post('https://bdocpa.onrender.com/finalize_conversation', {
         conversation: conversationStr
       });
       setprocess1(false);
