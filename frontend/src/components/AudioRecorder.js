@@ -64,7 +64,7 @@ const AudioRecorder = ({ onUploadSuccess, conversation, endpoint }) => {
       .join('\n');
     formData.append('conversation', conversationStr);
     try {
-      const response = await axios.post(`http://localhost:8000/${endpoint}`, formData, {
+      const response = await axios.post(`https://bdocpa.onrender.com/${endpoint}`, formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
       onUploadSuccess(response.data);
