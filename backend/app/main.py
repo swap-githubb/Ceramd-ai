@@ -14,7 +14,7 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI(title="Clinical Decision Support Backend")
 
 # Restrict CORS to allow only the frontend at localhost:3000.
-origins = ["http://localhost:3000"]
+origins = ["https://fdocpa.onrender.com"]
 
 app.add_middleware(
     CORSMiddleware,
